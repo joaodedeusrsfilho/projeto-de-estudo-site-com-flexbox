@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><!--indica que o site é em portugues do Brasil-->
+<head>
+    <!--Abaixo um meta dado que Indica que a codificação aceita acentos-->
+    <meta charset="UTF-8"> 
+    <!-- O próximo meta dado exibi a descrição do site nos sites de busca, recomendado para SEO -->
+    <meta name="description" content="Um bot que ira moderar e deixar a sua comunidade segura de um jeito fácil">
+    <!-- O próximo meta dado indica que o site será compativel com disposítivos mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"><!--liga o HTML com o CSS-->
+    <title>Balle Bot - Modere a sua comunidade do Discord</title>
+</head>
+<body>
+    <!-- Vamos usar tags semanticas abaixo -->
+    <!--Tag de cabeçalho do site-->
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="logo.svg" alt="logo da comunidade Ballerini">
+        <nav class="cabecalho-menu" ><!--Menu de navegação-->
+            <a class="cabecalho-menu-link" href="https://github.com/joaodedeusrsfilho" target="_blank">Meu GitHub</a>
+            <a class="cabecalho-menu-link">Tutorial</a>
+            <a class="cabecalho-menu-link">Open Source</a>
+            <a class="cabecalho-menu-link">Comandos</a>
+        </nav>
+    </header>
+    <!--Tag main = principal em ingles-->
+    <main class="conteudo-do-site" >
+        <!-- Vamos dividir em duas sessões utilizando a tag section -->
+        <section class="conteudo-primario" >
+            <!-- Agora vamos usar uma tag div para dividir a primeira sessão ao meio pois do lado direito ficara uma imagem e do lado esquerdo o texto -->
+            <div class="conteudo-primario-escrito" >
+                <h1 class="conteudo-primario-escrito-titulo" > Ballet Bot</h1>
+                <h2 class="conteudo-primario-escrito-subtitulo" >Deixe a sua comunidade segura de um jeito fácil</h2>
+                <button class="conteudo-primario-escrito-botao" >Me adicione!</button>
+            </div>
+            <!-- em seguida a imagem que ficara a direita da primeira sessão -->
+            <img class="conteudo-primario-imagem" src="imagem da ballet bot.png" alt="Imagem da ballet bot">
+        </section>
+        <section class="conteudo-secundario" >
+            <h3 class="conteudo-secundario-titulo" >O que ela faz por você?</h3>
+            <p class="conteudo-secundario-paragrafo" >  1. Cria um <strong> sistema de verificação capcha </strong> novos membros garantirem que não são robôs</p>
+            <p class="conteudo-secundario-paragrafo" >2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
+            <p class="conteudo-secundario-paragrafo" >3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
+        </section>
+
+    </main>
+    <!--Tag de rodapé-->
+    <footer class="rodape" >
+        <img  class="rodape-imagem" src="logo_rodape.svg" alt="ballerine">
+    </footer>
+</body>
+</html>
