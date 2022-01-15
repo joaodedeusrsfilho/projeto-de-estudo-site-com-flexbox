@@ -1,0 +1,118 @@
+/* Vamos importar a fonte que será usada no site, da página do Google Fonts */
+/* quando for usar a fonte escolhida do site google fonts, use este codigo: font-family: 'Righteous', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+/* vamos usar o reset CSS, para anular as configurações pre definidas do HTML */
+
+*{
+    margin: 0;
+    padding: 0%;
+    /* Vamos usar o box-sizing: border-box (dessa forma forçamos com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura. */
+    box-sizing: border-box;
+    text-decoration: none; /*para tirar qualquer decoração que tiver no texto (ex: sublinhado, azulzinho*/
+}
+body{
+    font-size: 100%;/*vamos fazer um reset no tamanho da font*/
+    background: linear-gradient(68.15deg, #2F2325 16.62%,#8E5D52 85.61%);
+    color: white;
+}
+.cabecalho{
+    display: flex;/*Vamos usar essa propriedada para facilitar o alinhamento dos conteudos do site*/
+    flex-direction: row;/*coloca o menu em uma linha*/
+    align-items: center;/*deixando os itens alinhado entre as bordas de superior e inferior*/
+    justify-content: space-around; /*isso define um espaço entre os itens do menu*/
+    padding: 24px;/*padding para espaçamento entre a borda e conteudo do cabeçalho*/
+
+}
+.cabecalho-imagem{
+    width: 90px;
+}
+.cabecalho-menu{
+    display: flex;/*Vamos usar essa propriedada para facilitar o alinhamento dos conteudos do site*/
+    gap: 50px;/*Espaçamento estre os elementos do menu ancora do nav*/
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 900;
+    
+}
+a{
+    color: rgb(246, 200, 12);
+}
+.conteudo-do-site{
+    border-top: 0.4px solid white; /*Largura da borda superior*/
+    margin-bottom: 40px; /*espacamento inferior do conteúdo*/
+}
+.conteudo-primario{
+    display: flex;/*Vamos usar essa propriedada para facilitar o alinhamento dos conteudos do site*/
+    flex-direction: row;/*Deixa os elementos do flexbox organizado na horizontal*/
+    align-items: center; /*para alinhar entre as borda superior e inferior*/
+    justify-content: space-around;/*Deixar centralizado os conteudos horizontalmente*/
+}
+.conteudo-primario-escrito{
+    display: flex;/*Vamos usar essa propriedada para facilitar o alinhamento dos conteudos do site*/
+    flex-direction: column;
+    gap: 20px;/*uso do gap para padronizar o distanciamento entre os elementos*/
+}
+.conteudo-primario-escrito-titulo{
+    font-size: 65px;
+    font-family: Verdana;
+    font-weight: 600;
+}
+.conteudo-primario-escrito-subtitulo{
+    font-size: 20px;
+    font-family: Times New Roman;
+    color: yellow;
+    padding-bottom: 20px;
+}
+.conteudo-primario-escrito-botao{
+    background-color: wheat;
+    width: 350px;
+    height: 50px;
+    border: none;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0); 
+    border-radius: 20px;  
+    font-size: 25px;
+    font-family: Times New Roman; 
+}
+.conteudo-primario-escrito-botao:hover{/*Usando o hover na frente da class para bota efeito no botão*/
+    background-color: yellow;
+}
+.conteudo-primario-imagem{
+    height: 400px;
+}
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 50px;
+}
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid white;
+    padding-top: 20px;
+    font-size: 25px;
+    font-family: Verdana;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.conteudo-secundario-paragrafo{
+    padding-top: 5px;
+    font-size: 15px;
+    font-family: Verdana;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.rodape{
+    border-top: 0.4px solid white;
+    padding: 20px;/*usando só o padding o valor sera para todos os lados*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: center;
+}
+.rodape-imagem{
+    display: block;/*Display block para centralizar a imagem*/
+    margin: 0 auto;/*para centralizar a margem*/
+    height: 30px;
+}
